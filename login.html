@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="IMAGES/logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="CSS/main.css">
+    <meta name="description" content="კულინარიული რეცეპტების საიტი, კულინარიული ნივთების მაღაზია">
+    <meta name="keywords" content="კულინარია, რეცეპტები, მაღაზია, საკვები, დესერტები, ხორცეული, სწრაფი კვება, ჩიზქეიქი, აჭარული ხაჭაპური, პასტა, ბრაუნი, ჰუმუსი, კარტოფილი, მოკა, კექსი, კოქტეილები, სტეიკი, პიცა, ცომეული, ტორტი, მაფინი, სალათი, მარწყვი, ბურგერი, FOOD FOR ALL,food for all, ფუდ ფორ ოლ">
+    <meta name="author" content="Mariam Markozashvili">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT LOG_IN</title>
+</head>
+<body>
+<?php 
+ include_once('connection.php');
+?>
+    <div id="container">
+        <!--header-->
+        <header id="headerWrapper">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html" class="logo-img">
+                        <img src="IMAGES/logo.png" alt="FOOD FOR ALL">
+                    </a>
+                    <a href="index.html" class="logo-name">
+                        FOOD FOR ALL
+                    </a>
+                </div>
+
+                <ul id="menu">
+                    <li>
+                        <a href="recipes.html">რეცეპტები</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ჩვენ შესახებ</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">მაღაზია</a>
+                    </li>
+                    <li class="active">
+                        <a href="login.html">კონტაქტი</a>
+                    </li>
+                </ul>
+
+                <span id="checkbtn"><i class="fas fa-bars"></i></span>
+            </nav>
+        </header>
+          <!--end of header-->
+    <!--content-->
+        <section id="content">
+            <div class="contact-bg">
+                <div class="form-bg">
+    <!--contact information-->
+                    <div class="contact-area">
+                        <h2>საკონტაქტო ინფორმაცია</h2>
+                        <div class="con-info">
+                            <div>
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <span>წინამძღვრიშვილის #121</span>
+                            </div>
+                            <div>
+                                <span><i class="far fa-envelope"></i></span>
+                                <span>FoodForAll@gmail.com</span>
+                            </div>
+                            <div>
+                                <span><i class="fab fa-youtube"></i></span>
+                                <span>FOOD FOR ALL</span>
+                            </div>
+                            <div>
+                                <span><i class="fas fa-mobile"></i></span>
+                                <span>+599200820</span>
+                            </div>
+                        </div>
+                        <ul class="socials">
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></a></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                      <!--end of contact information-->
+                    <form action="login.html" method="post">
+                        <h2>შესვლა</h2>
+                        <input type="text" id="name" name="username" placeholder="მომხმარებლის სახელი">
+                        <input type="password" id="pass" name="password" placeholder="პაროლი">
+                        <button name="login">შესვლა</button>
+                        <a href="registration.html" class="label-link">არ ხართ დარეგისტრირებული? <b>დარეგისტრირდით აქ</b></a>
+                      <p class="errors">
+                      <!-- <?php -->
+
+                        <!-- if(count($errors) > 0 ){
+                            foreach ($errors as $error) {
+                                echo $error.'<br/>';
+                            }
+                        } -->
+                        <!-- ?> -->
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.205216209682!2d44.79302738135425!3d41.71609037866102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d2c382e1325%3A0xc958533d39a215d0!2z4YOs4YOY4YOc4YOQ4YOb4YOr4YOm4YOV4YOg4YOY4YOo4YOV4YOY4YOa4YOY4YOhIOGDpeGDo-GDqeGDkCAjMTIx!5e0!3m2!1ska!2sge!4v1622034461574!5m2!1ska!2sge"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <!--end of content-->
+    <!--footer-->
+        <footer>
+            <span>© FOOD FOR ALL</span>
+            <span>ყველა უფლება დაცულია</span>
+        </footer>
+         <!--end of footer-->
+    </div>
+
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/main.js "></script>
+</body>
+
+</html>
